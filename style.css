@@ -29,9 +29,14 @@ header{
 #logo_div img{
     filter: invert();
 }
-#logo_div p{
+#logo_a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+#logo_text_a{
     color: white;
-    margin-bottom: 7px;
+    margin-bottom: 2px;
+    text-decoration: none;
 }
 
 #address_div{
@@ -39,7 +44,7 @@ header{
     height: 100%;
     width: 17%;
     display: flex;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 #address_div_l{
     /* border: 1px solid green; */
@@ -65,14 +70,15 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-.adr_p{
+.adr_a{
     line-height: 15px;
+    text-decoration: none;
 }
-#adr_p1{
+#adr_a1{
     color: rgba(255, 255, 255, 0.719);
     font-size: 0.9rem;
 }
-#adr_p2{
+#adr_a2{
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -85,7 +91,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 #search_div select{
     border: none;
@@ -94,6 +100,7 @@ header{
     border-radius: 5px 0px 0px 5px;
     background-color: #D4D4D4;
     font-size: 14px;
+    cursor: pointer;
 }
 #search_div input{
     border: none;
@@ -106,9 +113,11 @@ header{
     padding: 0px 4px;
     border-radius: 0px 5px 5px 0px;
     background-color: #FEBD69;
+    
 }
 #search_div button:hover{
     background-color: #e28a17;
+    cursor: pointer;
 }
 #search_div button img{
     height: 39px;
@@ -129,28 +138,30 @@ header{
     height: 35%;
     width: 35%;
 }
-#lang_div p{
+#lang_div a{
     color: white;
     font-weight: 600;
+    text-decoration: none;
 }
 
 #account_div{
     /* border: 1px solid blue; */
     height: 100%;
-    width: 8%;
+    width: 9%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
 }
-.accd_p{
+.accd_a{
     line-height: 15px;
+    text-decoration: none;
 }
-#accd_p1{
+#accd_a1{
     color: rgb(255, 255, 255);
     font-size: 0.9rem;
 }
-#accd_p2{
+#accd_a2{
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -165,14 +176,15 @@ header{
     justify-content: center;
     margin-left: 20px;
 }
-.ordd_p {
+.ordd_a {
     line-height: 15px;
+    text-decoration: none;
 }
-#ordd_p1 {
+#ordd_a1 {
     color: rgb(255, 255, 255);
     font-size: 0.9rem;
 }
-#ordd_p2 {
+#ordd_a2 {
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -191,8 +203,36 @@ header{
     height: 35px;
     width: 35px;
 }
-#cart_div p{
+#cart_div a{
     color: white;
     font-weight: 600;
     margin-top: 12px;
+    text-decoration: none;
+}
+
+nav{
+    width: 100vw;
+    height: 6vh;
+    background-color: #232F3E;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#hamburger_a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 24px;
+}
+#hamburger_a img{
+    height: 17px;
+    width: 17px;
+    filter: invert();
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
